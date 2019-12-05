@@ -19,9 +19,14 @@ def postal_lookup(postal_code):
     details = json.loads(result)
     return (details["result"]["latitude"], details["result"]["longitude"])
 
+def hello_world():
+    print("La Cuillere Heureux")
+
 if __name__ == "__main__":
-    degrees = get_weather("OSLO")
-    print("Weather in Oslo is %.2f degrees Celsius" % degrees)
+    degrees = get_weather("BANGKOK")
+    print("Weather in Bangkok is %.2f degrees Celsius" % degrees)
 
     location = postal_lookup("B323PP")
     print(location)
+    
+    hello_world()
