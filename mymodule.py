@@ -20,7 +20,7 @@ def postal_lookup(postal_code):
     return (details["result"]["latitude"], details["result"]["longitude"])
 
 def hello_world():
-    print("La Cuillere")
+    print("La Cuillere Heureux")
 
 if __name__ == "__main__":
     degrees = get_weather("BANGKOK")
